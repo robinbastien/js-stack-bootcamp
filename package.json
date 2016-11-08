@@ -1,0 +1,43 @@
+{
+  "name": "stack-test",
+  "version": "1.0.0",
+  "description": "Yarn package manager for Stack Test",
+  "main": "index.js",
+  "author": "Robin Bastien",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "eslintConfig": {
+    "extends": "leankit",
+    "plugins": [
+      "import"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "env": {
+    "browser": true
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-loader": "^6.2.7",
+    "babel-preset-latest": "^6.16.0",
+    "del": "^2.2.2",
+    "eslint": "^3.9.1",
+    "eslint-config-leankit": "^3.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.1",
+    "eslint-plugin-react": "^6.6.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-eslint": "^3.0.1",
+    "webpack-stream": "^3.2.0"
+  }
+}
