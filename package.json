@@ -25,7 +25,9 @@
       "latest"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel-polyfill": "^6.16.0"
+  },
   "devDependencies": {
     "babel-loader": "^6.2.7",
     "babel-preset-latest": "^6.16.0",
