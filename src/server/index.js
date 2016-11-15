@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 // Get the Kitteh
 
 /* This is replaced by the below, for newer ES6

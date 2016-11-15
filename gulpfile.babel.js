@@ -10,7 +10,8 @@ const paths = {
 	allSrcJs: "src/**/*.js",
 	serverSrcJs: "src/server/**/*.js?(x)",
 	sharedSrcJs: "src/shared/**/*.js?(x)",
-	clientEntryPoint: "src/client/app.js",
+	clientEntryPoint: "src/client/app.jsx",
+	clientBundle: "dist/client-bundle.js?(.map)",
 	gulpFile: "gulpfile.babel.js",
 	webpackFile: "webpack.config.babel.js",
 	libDir: "lib",
@@ -21,7 +22,10 @@ const paths = {
  * compiled ES5 code resides, taken from the ES6 code in
  * the 'src' dir.
  */
-gulp.task( "clean", ( ) => del( paths.libDir ) );
+gulp.task( "clean", ( ) => del( [
+	paths.libDir,
+	paths.clientBundle
+] ) );
 
 /* Check all the things for issues! Including this
  * file itself...so meta.

@@ -7,7 +7,7 @@ export default class {
 	}
 
 	meow( ) {
-		return `Meooww, I am a wee little ${this.name}`;
+		return `Meooww, I am a weeze little ${this.name}`;
 	}
 }
 
